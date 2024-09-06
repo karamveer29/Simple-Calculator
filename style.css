@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&family=Roboto:wght@300&display=swap');
+:root{
+    --body-bg:rgb(220, 208, 208);
+    --text-color: black;
+    --textbox-bg:rgb(74, 66, 66);
+    --textbox-color: rgb(76, 0, 117);
+    --number-bg: rgb(250, 257, 69);
+    --operator-bg: rgb(252, 171, 31);
+    --special-bg: rgb(100, 255, 107);
+}
+.dark-theme{
+    --body-bg: rgb(0, 0, 38);
+    --text-color: white;
+    --textbox-bg: white;
+    --textbox-color: black;
+    --number-bg: orange;
+    --operator-bg: rgb(201, 138, 0);
+    --special-bg: rgb(0, 251, 0);
+}
+#icon{
+    width: 27px;
+    cursor: pointer;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--body-bg);
+    color: var(--text-color);
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    margin: auto;
+    max-width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button{
+    padding: 20px;
+    margin: 0 3px;
+    border: 2px solid var(--text-color);
+    border-radius: 12px;
+    cursor: default;
+    border-color: var(--text-color);
+    width: 66px;
+    font-size: 1.5rem;
+}
+.button:hover{
+    padding: 20px;
+    margin: 0 3px;
+    border: 1.8px solid var(--text-color);
+    border-radius: 35px;
+    cursor: pointer;
+    border-color: var(--text-color);
+    width: 70px;
+    font-size: 1.8rem;
+}
+.row{
+    margin: 4px 0;
+}   
+.input{
+    margin: 0;
+    width: 287px;
+    font-size: 1.9rem;
+    padding: 10px 0px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: 4px;
+    color: var(--textbok-color);
+}
+.number{
+    background-color: var(--number-bg);
+}
+.operator{
+    background-color: var(--operator-bg);
+}
+.special{
+    background-color: var(--special-bg);
+}
+    
